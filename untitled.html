@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Pixlr - development manual</title>
+	
+	<meta name="Description" content="Pixlr is a free online photo editor. Edit, adjust and filter your images. No registration jump right in!" />
+	
+	<link rel="stylesheet" type="text/css" href="/_css/style.css" media="screen" />
+	<script type="text/javascript" src="pixlr.js"></script>
+	<script type="text/javascript">
+		pixlr.settings.target = 'http://localhost/pixlr-editor/save.php';
+ 	  	pixlr.settings.exit = 'http://localhost/pixlr-editor/pixlr.php';
+   		pixlr.settings.method = 'GET';
+   		pixlr.settings.redirect = false;
+	</script>
+	
+</head>
+<body>
+
+<h4>Click the image to edit</h4>
+<br />
+
+
+<b>Open image editor overlay</b><br />
+<a href="javascript:pixlr.overlay.show({image:'http://developer.pixlr.com/_image/example2.jpg', title:'Example image 1', service:'editor'});"><img src="pro.png" width="250" height="150" title="Edit in pixlr" /></a><br /><br />
+<br /><br />
+
+<b>Open photo express overlay</b><br />
+<a href="javascript:pixlr.overlay.show({image:'http://developer.pixlr.com/_image/example2.jpg', title:'Example image 2', service:'express'});"><img src="http://developer.pixlr.com/_image/example2_thumb.jpg" width="250" height="150" title="Edit in pixlr" /></a><br /><br />
+<br /><br />
+
+<b>Open image editor</b><br />
+<a href="javascript:pixlr.edit({image:'http://developer.pixlr.com/_image/example3.jpg', title:'Example image 3', service:'express', target:'http://developer.pixlr.com/save_post.php', exit:'http://developer.pixlr.com/'});"><img src="http://developer.pixlr.com/_image/example3_thumb.jpg" width="250" height="150" title="Edit in pixlr" /></a><br /><br />
+<br /><br />
+
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta charset="utf-8">
+
+	<meta name="Description" content="Pixlr is a free online photo editor. Edit, adjust and filter your images. No registration jump right in!" />
+
+	<link href="../css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="../css/favorite.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+
+	<script type="text/javascript" src="pixlr.js"></script>
+
+	<!-- 이미지 원본을 확인하는 팝업창  -->
+	<script language="javascript">
+		var img = document.getElementById("../img/pro.png");
+		<!--
+		function pop(){ 
+
+			window.open("../img/pro.png", "pop", "width=300,height=250,history=no,resizable=no,status=no,scrollbars=yes,menubar=no")
+		}
+		//-->
+	</script>
+
+</head>
+<body>
+
+	<div id="header">
+		<a id="logo" href="index.html">
+			<img  src="../img/LOGO.png" width="150" >
+		</a>
+		<nav id="topMenu" >
+			<ul> 
+				<li><a class="menuLink" href="index.html">Home</a></li> 
+				<li><a class="menuLink"  href="comments.html">Cmments</a></li> 
+				<li><a class="menuLink"  href="favorite.html">Favorite</a></li> 
+			</ul> 
+		</nav>
+		<form id="searchbox">
+			<input id="search" type="text" placeholder="     원하는 게시글을 검색하세요">
+			<input id="submit" type="submit" value="submit">
+		</form>
+		
+	</div>
+	<div id="wrap">
+		<div id="box">
+			<div id="aside">
+				<nav id="asideMenu" >
+					<div id="pro"><a href="javascript:pixlr.overlay.show({image:'http://developer.pixlr.com/_image/example2.jpg', title:'Example image 1', service:'editor'});"><img src="../img/pro.png"></a></div>
+					<h1>yerin님 안녕하세요!</h1>
+				</nav>
+			</div>
+			<!---                            룰루랄라     게시판 부분(목록)                                  -->
+			<div id="all_section">
+				<div id="company_info">
+					<h2 id=name>Yerin's Favorite</h2> 
+					
+				</div>
+				
+				<a id="pmg" href="javascript:pixlr.overlay.show({image:'http://developer.pixlr.com/_image/example2.jpg', title:'Example image 1', service:'editor'});"><img src="http://developer.pixlr.com/_image/example2.jpg" width="850"></a>
+
+			</div>
+		</div>
+	</div>
+		
+		
+	
+	<div id="footer">
+		
+		<div id="info">
+			<div class="infobox">
+				<img src="../img/envelope.png" width="17">
+				<h1 id="bold"> Email</h1>
+				<h2 id="second">ebbunbul@swu.ac.kr<h2>
+			</div>
+
+			<div class="infobox">
+				<img src="../img/phone.png" width="18">
+				<h1 id="bold">Telephone</h1>
+				<h2 id="second1"> 01042900<h2>
+			</div>
+
+			<div class="infobox">
+				<img src="../img/fax.png" width="18">
+				<h1 id="bold">Fax</h1>
+				<h2 id="second"> 0230122<h2>
+			</div>
+
+			<div class="infobox">
+				<img src="../img/placeholder.png" width="16">
+				<h1 id="bold"> Seoul,Korea</h1>
+				<!--h2 id="second">sdfsddfsf<h2-->
+			</div>
+		</div>
+		<div id="copyright"> 
+			Copyright @ 2017 - 감사합니다 웹페이지저작기초 짱짱 저작
+		
+	</div>
+
+</body>
+</html>
